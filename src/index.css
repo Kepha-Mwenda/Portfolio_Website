@@ -107,4 +107,13 @@ All colors MUST be HSL.
     border-color: hsl(var(--primary));
     box-shadow: 0 0 10px hsl(var(--primary) / 0.3);
   }
+  
+  .skill-bar {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .skill-bar:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-strong);
+  }
 }

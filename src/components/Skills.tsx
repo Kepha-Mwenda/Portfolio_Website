@@ -39,16 +39,18 @@ const SkillBar = ({ name, level, delay }: SkillBarProps) => {
   }, [isVisible, level, delay]);
 
   return (
-    <div ref={ref} className="space-y-2">
+    <div ref={ref} className="space-y-2 skill-bar group cursor-pointer">
       <div className="flex justify-between items-center">
-        <span className="text-sm font-medium text-foreground">{name}</span>
-        <span className="text-sm text-muted-foreground">{level}%</span>
+        <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors duration-300">{name}</span>
+        <span className="text-sm text-muted-foreground group-hover:text-secondary transition-colors duration-300">{level}%</span>
       </div>
-      <div className="h-3 bg-muted rounded-full overflow-hidden border border-border">
+      <div className="h-3 bg-muted rounded-full overflow-hidden border border-border group-hover:border-primary transition-all duration-300">
         <div
-          className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out glow"
+          className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out glow group-hover:glow-strong relative overflow-hidden"
           style={{ width: `${width}%` }}
-        />
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
+        </div>
       </div>
     </div>
   );
