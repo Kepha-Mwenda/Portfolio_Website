@@ -41,15 +41,16 @@ const SkillBar = ({ name, level, delay }: SkillBarProps) => {
   return (
     <div ref={ref} className="space-y-2 skill-bar group cursor-pointer">
       <div className="flex justify-between items-center">
-        <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors duration-300">{name}</span>
-        <span className="text-sm text-muted-foreground group-hover:text-secondary transition-colors duration-300">{level}%</span>
+        <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors duration-300 group-hover:scale-105 inline-block">{name}</span>
+        <span className="text-sm text-muted-foreground group-hover:text-secondary transition-all duration-300 group-hover:scale-110 font-bold">{level}%</span>
       </div>
-      <div className="h-3 bg-muted rounded-full overflow-hidden border border-border group-hover:border-primary transition-all duration-300">
+      <div className="h-3 bg-muted rounded-full overflow-hidden border border-border group-hover:border-primary group-hover:h-4 transition-all duration-300 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
         <div
-          className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out glow group-hover:glow-strong relative overflow-hidden"
+          className="h-full bg-gradient-to-r from-primary via-accent to-secondary rounded-full transition-all duration-1000 ease-out glow group-hover:glow-strong relative overflow-hidden group-hover:animate-pulse"
           style={{ width: `${width}%` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_2s_infinite]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-secondary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
       </div>
     </div>

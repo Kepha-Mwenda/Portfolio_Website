@@ -26,13 +26,6 @@ const Projects = () => {
       link: "https://github.com/Kepha-Mwenda/Penetration-Tests",
       featured: false
     },
-    {
-      title: "Portfolio Website",
-      description: "Modern, interactive cybersecurity portfolio built with React and TypeScript. Features animated UI components, project showcases, and professional certifications.",
-      tags: ["React", "TypeScript", "Portfolio", "Web Development"],
-      link: "https://github.com/Kepha-Mwenda/My_Portfolio",
-      featured: false
-    },
   ];
 
   return (
