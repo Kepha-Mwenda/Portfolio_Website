@@ -20,9 +20,9 @@ const Hero = () => {
             Forensic Investigator | Cybersecurity Analyst | Data Analyst
           </p>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate about forensic cybersecurity, cyber threat analysis, and digital investigations. 
-            Specialized in threat intelligence, malware analysis, and security operations.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Highly skilled professional with a Bachelor's degree in Forensic Science and over three years of experience in data analysis and system management. 
+            Currently advancing skills in cybersecurity with focus on forensic cybersecurity, threat intelligence, and security operations.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">

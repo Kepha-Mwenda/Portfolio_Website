@@ -59,14 +59,14 @@ const SkillBar = ({ name, level, delay }: SkillBarProps) => {
 
 const Skills = () => {
   const skills = [
-    { name: "Cyber Threat Intelligence", level: 95 },
+    { name: "Data Analytics & Visualization", level: 95 },
+    { name: "SQL & Database Management", level: 92 },
     { name: "Digital Forensics", level: 90 },
-    { name: "Malware Analysis", level: 85 },
-    { name: "Incident Response", level: 88 },
-    { name: "Network Security", level: 82 },
-    { name: "SIEM & Log Analysis", level: 87 },
-    { name: "Vulnerability Assessment", level: 80 },
-    { name: "Python Scripting", level: 78 },
+    { name: "Python Programming", level: 85 },
+    { name: "Power BI & Tableau", level: 90 },
+    { name: "Network Security Analysis", level: 82 },
+    { name: "Cyber Threat Intelligence", level: 85 },
+    { name: "System Hardening & Security", level: 80 },
   ];
 
   return (
