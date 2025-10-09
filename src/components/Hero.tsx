@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,217,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,217,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
       

@@ -31,29 +31,29 @@ const Tools = () => {
   return (
     <section id="tools" className="py-20 px-4 bg-gradient-to-b from-transparent to-card/20">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Tools & Technologies</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto glow-accent" />
+          <div className="h-1 w-24 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto glow-accent animate-pulse-glow" />
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {tools.map((tool, index) => (
             <Card
               key={tool.name}
-              className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:glow group cursor-pointer"
+              className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:scale-110 hover:glow group cursor-pointer hover:rotate-2"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="flex flex-col items-center text-center space-y-3">
-                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors border border-primary/20 group-hover:glow">
-                  <tool.icon className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 border border-primary/20 group-hover:glow group-hover:rotate-12">
+                  <tool.icon className="h-6 w-6 text-primary group-hover:scale-125 transition-transform duration-300" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                     {tool.name}
                   </h3>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-xs text-muted-foreground mt-1 group-hover:text-secondary transition-colors duration-300">
                     {tool.category}
                   </p>
                 </div>

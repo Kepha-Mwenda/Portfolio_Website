@@ -31,18 +31,18 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 bg-gradient-to-b from-card/20 to-transparent">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Featured Projects</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto glow-accent" />
+          <div className="h-1 w-24 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto glow-accent animate-pulse-glow" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className={`p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:glow group ${
+              className={`p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:glow-strong group hover:-translate-y-3 ${
                 project.featured ? "md:col-span-1" : ""
               }`}
             >
@@ -58,7 +58,7 @@ const Projects = () => {
                       </Badge>
                     )}
                   </div>
-                  <Github className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <Github className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:rotate-12 group-hover:scale-125" />
                 </div>
 
                 <p className="text-muted-foreground text-sm leading-relaxed">

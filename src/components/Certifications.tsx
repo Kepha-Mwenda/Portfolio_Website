@@ -63,18 +63,18 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Certifications</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow" />
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow animate-pulse-glow" />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <Card
               key={index}
-              className="overflow-hidden bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:glow group"
+              className="overflow-hidden bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:glow-strong group hover:-translate-y-2"
             >
               <div className="aspect-video relative overflow-hidden bg-muted">
                 <img

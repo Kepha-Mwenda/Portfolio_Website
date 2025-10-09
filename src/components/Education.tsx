@@ -30,18 +30,18 @@ const Education = () => {
   return (
     <section id="education" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Education & Training</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow" />
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow animate-pulse-glow" />
         </div>
 
         <div className="grid md:grid-cols-1 gap-6">
           {education.map((edu, index) => (
             <Card 
               key={index}
-              className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] hover:glow group"
+              className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-[1.02] hover:glow group hover:-translate-y-1"
             >
               <CardHeader>
                 <div className="flex items-start justify-between flex-wrap gap-4">

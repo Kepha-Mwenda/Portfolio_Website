@@ -28,11 +28,11 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">About Me</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow" />
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto glow animate-pulse-glow" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -41,11 +41,12 @@ const About = () => {
             return (
               <Card 
                 key={index}
-                className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:glow group"
+                className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:glow group animate-float"
+                style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
-                    <Icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                  <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-all duration-300 group-hover:rotate-6">
+                    <Icon className="h-6 w-6 text-primary group-hover:scale-125 transition-transform duration-300" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
@@ -61,7 +62,7 @@ const About = () => {
           })}
         </div>
 
-        <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 glow">
+        <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 glow hover:glow-strong transition-all duration-500">
           <p className="text-lg text-foreground leading-relaxed text-center">
             Demonstrates exceptional expertise in data analytics, management, and visualization. 
             Experienced in using tools such as Tableau and Power BI to deliver actionable insights. 
