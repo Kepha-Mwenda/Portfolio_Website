@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
 const ContactChat = () => {
-  // Replace this URL with your actual Google Form link
-  const googleFormUrl = "https://forms.gle/YOUR_FORM_ID";
+  const googleFormUrl = "https://forms.gle/bzXJQF4frAeVWdb69";
 
   const handleContactClick = () => {
     window.open(googleFormUrl, '_blank', 'noopener,noreferrer');
